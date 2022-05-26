@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Notes Test app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+1)Вы можете добавить записи, указав номер и название
+2)Записи публикуются в порядку возрастания номеров
+3)Записи сохраняются в Local Storage
 
 ### `npm start`
 
