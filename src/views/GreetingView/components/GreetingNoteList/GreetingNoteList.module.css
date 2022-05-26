@@ -1,0 +1,17 @@
+.list_title{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.list_wrapper{
+    margin-top: 58px;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    list-style: none;
+    max-height: 300px;
+    overflow: scroll;
+}

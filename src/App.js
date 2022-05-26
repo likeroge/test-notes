@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useState } from "react";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Wrapper } from "./components/Wrapper/Wrapper";
+import { NotesContext, Store } from "./store/Store";
+import { GreetingView } from "./views/GreetingView/GreetingView";
+
+const mockNotes = [
+  {
+    note_title: "Hello",
+    note_number: 1,
+  },
+  {
+    note_title: "World",
+    note_number: 2,
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Header />
+      <GreetingView />
+      <Footer />
+    </Wrapper>
   );
 }
 
