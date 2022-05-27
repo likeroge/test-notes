@@ -7,3 +7,16 @@
     padding: 0 16px 0 16px;
     justify-content: space-evenly;
 }
+
+@media (max-width: 767px) {
+    .greeting_form{
+       width: 100%;
+       height:200px;
+    }
+}
+
+@media (min-width: 767px) {
+    .greeting_form {
+            width: 400px;
+    }
+}

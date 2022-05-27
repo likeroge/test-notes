@@ -1,0 +1,11 @@
+.logo_wrapper{
+    width: 155px;
+    height: 48px;
+}
+
+@media (max-width: 767px) {
+    .logo_wrapper {
+        width: 155px;
+        height: 38px;
+    }
+}

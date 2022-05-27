@@ -1,11 +1,13 @@
 import React from "react";
+import styles from "./Logo.module.css";
 
 export const Logo = () => {
   return (
     <div>
       <svg
-        width="155"
-        height="64"
+        class={styles.logo_wrapper}
+        // width="155"
+        // height="64"
         viewBox="0 0 155 64"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

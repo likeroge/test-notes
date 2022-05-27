@@ -4,3 +4,9 @@
         height: 160px;
         padding: 48px 32px 48px 32px;
 }
+
+@media (max-width: 767px) {
+    .footer_wrapper {
+        padding: 8px 0px 8px 0px;
+    }
+}

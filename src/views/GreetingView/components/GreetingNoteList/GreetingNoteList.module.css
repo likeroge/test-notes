@@ -15,3 +15,15 @@ ul {
     max-height: 300px;
     overflow: scroll;
 }
+
+@media (max-width: 767px) {
+    ul{
+        margin: 0 10px 40px 10px;
+        font-size: 24px;
+    }
+    .list_title {
+        text-align: center;
+        font-size: 28px;
+    }
+   
+}

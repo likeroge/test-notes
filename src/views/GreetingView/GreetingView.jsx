@@ -1,5 +1,4 @@
 import React from "react";
-import { FlexCol } from "../../components/FlexCol/FlexCol";
 import { NoteForm } from "../../components/NoteForm/NoteForm";
 import { GreetingNoteList } from "./components/GreetingNoteList/GreetingNoteList";
 import styles from "./GreetingView.module.css";
