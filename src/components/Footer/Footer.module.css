@@ -8,5 +8,6 @@
 @media (max-width: 767px) {
     .footer_wrapper {
         padding: 8px 0px 8px 0px;
+        height: 80px;
     }
 }
