@@ -8,17 +8,19 @@ export const NoteForm = () => {
   const [number, setNumber] = useState("");
   const { addNote, notes } = useContext(NotesContext);
 
-  const addNoteToList = () => {
-    addNote({ title, number });
-    notes.push({ number, title });
-    setNumber("");
-    setTitle("");
-    if (localStorage.getItem("notes")?.length) {
-      localStorage.removeItem("notes");
-      console.log("removed");
-      localStorage.setItem("notes", JSON.stringify(notes));
-    } else {
-      localStorage.setItem("notes", JSON.stringify(notes));
+  const onAddButtonHandler = () => {
+    if (title && number) {
+      addNote({ title, number });
+      notes.push({ number, title });
+      setNumber("");
+      setTitle("");
+      if (localStorage.getItem("notes")?.length) {
+        localStorage.removeItem("notes");
+        console.log("removed");
+        localStorage.setItem("notes", JSON.stringify(notes));
+      } else {
+        localStorage.setItem("notes", JSON.stringify(notes));
+      }
     }
   };
 
@@ -46,7 +48,7 @@ export const NoteForm = () => {
         />
       </FlexCol>
 
-      <button onClick={addNoteToList}>Добавить в список</button>
+      <button onClick={onAddButtonHandler}>Добавить в список</button>
     </div>
   );
 };
